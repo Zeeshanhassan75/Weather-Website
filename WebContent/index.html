@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <style>
+        body{
+            background-color: #344a72;
+            font-family:'Roboto', sans-serif ;      
+        }
+        .signup-box{
+            width: 360px;
+            height: 620px; 
+            margin: auto;
+            background-color:white;
+            border-radius: 4px;
+        }
+         h1{
+            text-align: center;
+            padding-top: 15px ;
+         }
+         h4{
+            text-align: center;
+         }
+         form{
+           width: 300px;
+           margin-left: 20px;
+         }
+         form label{
+            display: flex;
+            margin-top: 15px;
+            font-size: 15px;
+         }
+         form input{
+            width: 100%;
+            padding: 6px; 
+            border:none;
+            border: 2px solid gray;
+            border-radius: 6px;
+            outline: none;
+         }
+         input[type="button"]{
+            width: 320px;
+            height: 35px;
+            margin-top: 20px;
+            border: none;
+            background-color: rgb(90, 90, 186);
+            color: white;
+            font: size 18px;
+         }
+         p{
+            text-align: center;
+            padding-top: 20px;
+            font-size: 15px;
+         }
+         .zack{
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            margin: -10px;
+         }
+         .zack a{
+            color: #49c1a2;
+         }
+    </style>
+</head>
+<body>
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <h4> It's only takes a minute</h4>
+        <form action="/servletproject/app" method="post" >
+              <label>First name</label>
+              <input type="text" placeholder="" name="Firstname">
+              <label>Last  name</label>
+              <input type="text" placeholder="" name="Lastname">
+ <label>Password </label>
+              <input type="password" placeholder="" name="Password">
+              <label>Password </label>
+              <input type="password" placeholder="" name="Password">
+              
+              <input type="submit" value="submit">              
+        </form>
+        <p>By clicking the sign up button,you agree to our<br>
+        <a href="#">Terms and condition</a> and <a href="#">Policy privacy </a>
+        </p>
+    </div>
+    <p class="zack">
+        Already have an account? <a href="#">Login here</a> 
+    </p>
+</body>
+</html>
